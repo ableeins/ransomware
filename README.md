@@ -9,7 +9,7 @@ All use cases should strictly follow ethical hacking principles and be performed
 ## 👤 Author Info
 
 - 🧠 Name: **Ilham Husseini**
-- 🔗 LinkedIn: [Ilham Husseini](https://www.linkedin.com/in/ableeins)
+- 🔗 LinkedIn: [Ilham Husseini](https://www.linkedin.com/in/ilham-husseini)
 - 🧑‍💻 GitHub: [@ableeins](https://github.com/ableeins)
 - 🎮 IG / IGN: [@ableeins](https://instagram.com/ableeins)
 
@@ -26,6 +26,23 @@ Tujuan utamanya adalah memberikan wawasan tentang cara kerja ransomware, bagaima
 
 ---
 
+## 🛠️ Cara Menjalankan (Mode Aman)
+
+> 🔐 Pastikan hanya dijalankan di **VM / folder testing**, **bukan di sistem utama!**
+
+```bash
+$ git clone https://github.com/ableeins/ransomware.git
+$ cd ransomware
+$ python3 main.py
+Atau jalankan dengan virtualenv:
+
+bash
+Salin
+Edit
+$ python3 -m venv venv
+$ source venv/bin/activate
+$ pip install -r requirements.txt
+$ python3 main.py
 💣 Fitur
 🔐 Enkripsi file lokal dengan AES
 
@@ -80,24 +97,3 @@ Kalau kamu tertarik dengan dunia cybersecurity dan ethical hacking, jangan lupa:
 ☕ Ngopi bareng Ilham di dunia maya (DM @ableeins 😄)
 
 “Understand the dark to defend the light.” — Cybersecurity Wisdom
-
-
-
-## 🛠️ Cara Menjalankan (Mode Aman)
-
-> 🔐 Pastikan hanya dijalankan di **VM / folder testing**, **bukan di sistem utama!**
-
-```bash
-$ git clone https://github.com/ableeins/ransomware.git
-$ cd ransomware
-$ python3 main.py
-
-Atau jalankan dengan virtualenv:
-
-bash
-Salin
-Edit
-$ python3 -m venv venv
-$ source venv/bin/activate
-$ pip install -r requirements.txt
-$ python3 main.py
