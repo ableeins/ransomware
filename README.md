@@ -1,99 +1,104 @@
+██████  █████  ██████  ███  ███ ██████  ██  ██  ██████  ███████ ██████  ██   ██ ██   ██ ██   ██ ████  ████ ██   ██ ██  ██ ██    ██ ██      ██   ██  ██████  ███████ ██████  ██ ████ ██ ██████  ██  █  ██ ██  ██ █████  █████   ██      ██   ██ ██      ██  ██  ██ ██      ██ ███ ██ ██  ██ ██     ██   ██  ██  ██  ██ ██  ██      ██ ██   ███ ███   ██████  ███████ ██  ██                           
+
 # 🕶️ Ransomware Educational Project
 
-> ⚠️ **WARNING:** This repository is created for **EDUCATIONAL PURPOSES ONLY**.  
-Do NOT use this tool for illegal or malicious activities. You are responsible for your own actions.  
-All use cases should strictly follow ethical hacking principles and be performed in safe environments.
+> ⚠️ **DISCLAIMER:** This tool is created for **educational & ethical hacking purposes** only.  
+Please do not use this software to harm or compromise real systems.
 
 ---
 
-## 👤 Author Info
+## 👤 Author
 
-- 🧠 Name: **Ilham Husseini**
-- 🔗 LinkedIn: [Ilham Husseini](https://www.linkedin.com/in/ilham-husseini)
-- 🧑‍💻 GitHub: [@ableeins](https://github.com/ableeins)
-- 🎮 IG / IGN: [@ableeins](https://instagram.com/ableeins)
-
----
-
-## 🧨 Tentang Proyek Ini
-
-Proyek ini adalah **simulasi ransomware** untuk kebutuhan:
-- 💻 **Penetration Testing**
-- 🧪 **Cybersecurity Research**
-- 🧠 **Belajar Cara Kerja Malware Secara Etis**
-
-Tujuan utamanya adalah memberikan wawasan tentang cara kerja ransomware, bagaimana proses enkripsi file dilakukan, dan bagaimana sistem keamanan bisa diperkuat melawan serangan semacam ini.
+- 🧑‍💻 GitHub: [@ableeins](https://github.com/ableeins)  
+- 🔗 LinkedIn: [Ilham Husseini](https://linkedin.com/in/ilham-husseini)  
+- 📸 Instagram IGN: [@ableeins](https://instagram.com/ableeins)
 
 ---
 
-## 🛠️ Cara Menjalankan (Mode Aman)
+## 🚧 Project Description
 
-> 🔐 Pastikan hanya dijalankan di **VM / folder testing**, **bukan di sistem utama!**
+This project simulates the basic behavior of a ransomware attack — **for study and awareness purposes only**. It shows how:
+
+- 🧠 A system can be compromised
+- 🔐 Files can be encrypted
+- 📜 A ransom note can be generated
+
+> ✅ This project does **not** send any data or connect to any C2 server. It's safe to test locally.
+
+---
+
+## 🛠️ How to Run
+
+🖥️ **Installation:**
 
 ```bash
-$ git clone https://github.com/ableeins/ransomware.git
-$ cd ransomware
-$ python3 main.py
-Atau jalankan dengan virtualenv:
+git clone https://github.com/ableeins/ransomware.git
+cd ransomware
+python3 main.py
+Or run with make:
 
 bash
 Salin
 Edit
-$ python3 -m venv venv
-$ source venv/bin/activate
-$ pip install -r requirements.txt
-$ python3 main.py
-💣 Fitur
-🔐 Enkripsi file lokal dengan AES
+make install
+make run
+💡 Best tested inside a virtual machine or test folder.
 
-📦 Simulasi dropper
+🔥 Features
+🔒 AES encryption of target files
 
-🔁 Loop untuk folder/folder dalam
+🧾 Auto-generated ransom note
 
-🔑 Auto-generate ransom key
+🌀 File looping and targeting folders
 
-📄 Ransom note generator
+🔑 Key generation (stored locally)
 
-❌ Apa yang Tidak Dilakukan Oleh Script Ini
-Tidak mengirim file keluar jaringan
-
-Tidak melakukan koneksi C2 (Command & Control)
-
-Tidak melakukan enkripsi sistem atau boot sector
-
-Ini adalah versi edukatif — tidak berbahaya secara nyata jika dijalankan di folder test.
-
-📂 Struktur Direktori
+📂 Folder Structure
 bash
 Salin
 Edit
-/ransomware
-├── main.py            # Script utama ransomware simulator
-├── encryptor.py       # Modul enkripsi file
-├── decryptor.py       # Modul dekripsi (jika ada kunci)
-├── ransom_note.txt    # Catatan tebusan yang dihasilkan
-├── requirements.txt   # Dependensi
-└── README.md          # Dokumentasi
-🧠 Gunakan untuk:
-Simulasi keamanan endpoint
+ransomware/
+├── main.py            # Main executable
+├── encryptor.py       # Handles encryption
+├── decryptor.py       # Handles decryption
+├── ransom_note.txt    # Generated note
+├── requirements.txt   # Python dependencies
+└── README.md          # This file 😎
+💣 Sample Output
+pgsql
+Salin
+Edit
+[*] Encrypting files in ./test-folder
+[✔] File encrypted: photo.jpg
+[✔] File encrypted: doc.txt
+[!] Ransom note dropped: READ_ME_NOW.txt
+🎭 Animation (CLI Tease)
+Mau efek animasi typing style di CLI? Tambahkan script berikut ke main.py:
 
-Praktik membangun solusi anti-malware
+python
+Salin
+Edit
+import time, sys
+def slowprint(text):
+    for char in text:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(0.03)
+Pakai seperti ini:
 
-Edukasi di bidang keamanan informasi
+python
+Salin
+Edit
+slowprint("Encrypting your files... 💀\n")
+📄 License
+yaml
+Salin
+Edit
+MIT License – 2025 Ilham Husseini
+🧠 Ethical Reminder
+"If you want to defeat the darkness... you must first understand how it works."
+Use this tool only for responsible learning. Never on real systems without consent.
 
-Demonstrasi bahaya serangan ransomware
-
-🧤 Ethical Use Reminder
-Jangan pernah gunakan tools seperti ini untuk mengganggu sistem orang lain.
-Gunakan secara bijak, dalam jaringan tertutup atau virtual, dan hanya untuk edukasi & ethical testing.
-
-⭐ Dukungan
-Kalau kamu tertarik dengan dunia cybersecurity dan ethical hacking, jangan lupa:
-
-⭐ Star repo ini
-
-🧠 Fork buat kembangkan versi kamu
-
-☕ Ngopi bareng Ilham di dunia maya (DM @ableeins 😄)
-
-“Understand the dark to defend the light.” — Cybersecurity Wisdom
+⭐ Support
+Give this repo a ⭐ if you learned something new or had fun with the simulation!
+DM me on IG @ableeins kalau mau collab proyek cybersec atau tools edukasi lainnya.
