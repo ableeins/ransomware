@@ -42,7 +42,9 @@ Salin
 Edit
 make install
 make run
-💡 Best tested inside a virtual machine or test folder.
+
+
+## 💡 Best tested inside a virtual machine or test folder.
 
 🔥 Features
 🔒 AES encryption of target files
@@ -51,9 +53,9 @@ make run
 
 🌀 File looping and targeting folders
 
-🔑 Key generation (stored locally)
+## 🔑 Key generation (stored locally)
 
-📂 Folder Structure
+## 📂 Folder Structure
 bash
 Salin
 Edit
@@ -64,7 +66,7 @@ ransomware/
 ├── ransom_note.txt    # Generated note
 ├── requirements.txt   # Python dependencies
 └── README.md          # This file 😎
-💣 Sample Output
+## 💣 Sample Output
 pgsql
 Salin
 Edit
@@ -72,33 +74,8 @@ Edit
 [✔] File encrypted: photo.jpg
 [✔] File encrypted: doc.txt
 [!] Ransom note dropped: READ_ME_NOW.txt
-🎭 Animation (CLI Tease)
-Mau efek animasi typing style di CLI? Tambahkan script berikut ke main.py:
+## 🎭 Animation (CLI Tease)
 
-python
-Salin
-Edit
-import time, sys
-def slowprint(text):
-    for char in text:
-        sys.stdout.write(char)
-        sys.stdout.flush()
-        time.sleep(0.03)
-Pakai seperti ini:
-
-python
-Salin
-Edit
-slowprint("Encrypting your files... 💀\n")
-📄 License
-yaml
-Salin
-Edit
-MIT License – 2025 Ilham Husseini
-🧠 Ethical Reminder
-"If you want to defeat the darkness... you must first understand how it works."
-Use this tool only for responsible learning. Never on real systems without consent.
-
-⭐ Support
+## ⭐ Support
 Give this repo a ⭐ if you learned something new or had fun with the simulation!
 DM me on IG @ableeins kalau mau collab proyek cybersec atau tools edukasi lainnya.
